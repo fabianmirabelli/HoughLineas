@@ -73,7 +73,7 @@ public class HoughLineas {
                 
                 // Detectar líneas utilizando la transformada de Hough
                 Mat lineas = new Mat();
-                Imgproc.HoughLines(suavizar, lineas, 1, Math.PI / 180, umbralMin);;
+                Imgproc.HoughLines(suavizar, lineas, 1, Math.PI / 180, umbralMin);
 
                 // Dibujar las líneas detectadas en la imagen
                 Mat imagenConLineas = imagen.clone();
